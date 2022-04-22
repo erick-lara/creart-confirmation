@@ -16,9 +16,7 @@ function App() {
 
   function redirect(){
     let token = getToken();
-    console.log(token)
     callApi(token);
-    console.log(api)
     let redirectUrl = "http://github.com";
 
     let redirect = setTimeout(function () {
