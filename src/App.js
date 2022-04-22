@@ -10,28 +10,27 @@ function App() {
   }, []);
 
 
-  function callApi(token){
-    api.post(token)
-    .then((response) => {
-      console.log(response.data)
-    });
+  function callApi(value){
+    api.post(value)
   }
 
   function redirect(){
     let token = getToken();
+    console.log(token)
     callApi(token);
+    console.log(api)
     let redirectUrl = "http://github.com";
 
-    var omegalul = setTimeout(function () {
-        window.location.href = redirectUrl;
-        window.clearTimeout(omegalul);
+    let redirect = setTimeout(function () {
+      window.location.href = redirectUrl;
+      window.clearTimeout(redirect);
     }, 5000);
   }
 
   function getToken(){
     const queryParams = new URLSearchParams(window.location.search)
     const term = queryParams.get("token")
-    console.log(term) 
+    return term;
     
   }
   return (
