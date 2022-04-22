@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: auto;
+}
+
+p,
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+button {
+  color: #FFF;
+  border: none;
+  background: linear-gradient(180deg, #8F32A8 0%, #2A92A8 100%);
+}
+
+.ConteudoLandingPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 90%;
+  height: 100vh;
+  color: #232323;
+}
+
+
+.conteudoEscritoLandingPage {
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.imgLanding {
+  height: 470px;
+}
+
+.linhaLP {
+  background-color: #7f7f7f;
+  width: 75%;
+  height: 0.1vh;
+}
+
+
+.logosLP {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+
+}
+
+.tituloPrincipalLP {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.subtituloPrincipalLP {
+  font-size: 24px;
+}
+
+.mensagemCadastroLP {
+  font-size: 16px;
+}
