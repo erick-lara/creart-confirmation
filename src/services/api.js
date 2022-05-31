@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://creart-scheduler.azurewebsites.net/api/scheduler-ws/mails/confirm",
+    baseURL: "http://localhost:8080/api/social-ws/admin/confirm",
 });
 
 export default api;

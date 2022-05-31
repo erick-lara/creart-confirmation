@@ -17,7 +17,7 @@ function App() {
   function redirect(){
     let token = getToken();
     callApi(token);
-    let redirectUrl = "http://github.com";
+    let redirectUrl = "https://creart-front.vercel.app/";
 
     let redirect = setTimeout(function () {
       window.location.href = redirectUrl;
@@ -31,6 +31,7 @@ function App() {
     return term;
     
   }
+
   return (
     <>
     <div className='ConteudoLandingPage'>
